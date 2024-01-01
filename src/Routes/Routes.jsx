@@ -5,6 +5,7 @@ import {
 import Main from "../Layouts/Main";
 import MouseBack from "../Pages/Home/Home/MouseBack/MouseBack";
 import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SignUp/SignUp";
 
 
 const router = createBrowserRouter([
@@ -15,13 +16,17 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <MouseBack></MouseBack>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'signUp',
+        element: <SignUp></SignUp>
       }
     ]
   },
-  {
-    path: '/login',
-    element: <Login></Login>
-  }
 ]);
 
 export default router;
