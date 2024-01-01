@@ -1,11 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navli = ( 
+    <>
+      <li><Link>Blog</Link></li>
+    <li><Link>Features</Link></li>
+    <li><Link>About</Link></li>
+    </>
+  )
+
+
   return (
-    <header class="top-0 mb-16">
-      <div class="container mx-auto flex flex-wrap p-5  md:flex-row items-center ">
-        <a class="flex title-font flex-grow font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
+    <div className="navbar bg-base-100 mb-16">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            {navli}
+          </ul>
+        </div>
+        <a className="btn btn-ghost text-xl"><svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             stroke="currentColor"
@@ -16,16 +50,18 @@ const Navbar = () => {
             viewBox="0 0 24 24"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-gray-400 text-xl">Mouseback</span>
-        </a>
-        <label className="swap swap-rotate">
+          </svg>Mouseback</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          {navli}
+          
+        </ul>
+      </div>
+      <div className="navbar-end">
+      <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
-          <input
-            type="checkbox"
-            className="theme-controller"
-            value="black"
-          />
+          <input type="checkbox" className="theme-controller" value="black" />
 
           {/* sun icon */}
           <svg
@@ -46,7 +82,7 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-    </header>
+    </div>
   );
 };
 
