@@ -32,7 +32,7 @@ const Navbar = () => {
   const navli = ( 
     <>
       <li><Link>Blog</Link></li>
-    <li><Link>Features</Link></li>
+    <li><a href="#features">Features</a></li>
     <li><Link>About</Link></li>
     {user ? <li><Link onClick={handleLogOut} >Log Out</Link></li> : <li><Link to="/login">Login</Link></li>}
     </>
@@ -40,7 +40,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="navbar bg-base-100 mb-16">
+    <div className="navbar font-mono bg-base-100 mb-16">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

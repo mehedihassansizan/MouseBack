@@ -2,14 +2,15 @@ import React from "react";
 import video from "../../../../assets/video/414109370_7237171126370790_1089872783276703605_n_2.mp4";
 import bannarImg from "../../../../assets/img/open-saas-banner.png"
 import BuiltShipsWith from "../../../../component/BuiltShipsWith";
+import Features from "../../../../component/Features";
 
 
 const MouseBack = () => {
   return (
     <div >
         {/* <!-- Build software Together --> */}
-        <div className=" body-font mb-16 bg-frame ">
-          <div className="container px-5 py-24 mx-auto">
+        <div className=" body-font font-mono bg-frame ">
+          <div className="container px-5  mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="text-7xl font-bold title-font mb-4">
                 Build software <br /> together.
@@ -37,12 +38,15 @@ const MouseBack = () => {
           </div>
         </div>
       
-      <div className="container mx-auto mb-20">
+      <div className="container md:p-20 md:mt-0 mt-24 mx-auto mb-20">
         <img className="rounded-lg"  src={bannarImg} alt="" />
       </div>
 
       {/* Built and Ships with */}
     <BuiltShipsWith></BuiltShipsWith>
+
+    {/* open source */}
+    <Features></Features>
 
       <section className="mb-16">
         <div className="container px-5 mx-auto">
