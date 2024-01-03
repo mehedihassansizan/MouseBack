@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "../../../../component/Navbar";
 import video from "../../../../assets/video/414109370_7237171126370790_1089872783276703605_n_2.mp4";
+import bannarImg from "../../../../assets/img/open-saas-banner.png"
+import BuiltShipsWith from "../../../../component/BuiltShipsWith";
+
 
 const MouseBack = () => {
   return (
-    <div>
+    <div >
         {/* <!-- Build software Together --> */}
         <div className=" body-font mb-16 bg-frame ">
           <div className="container px-5 py-24 mx-auto">
@@ -35,9 +37,15 @@ const MouseBack = () => {
           </div>
         </div>
       
+      <div className="container mx-auto mb-20">
+        <img className="rounded-lg"  src={bannarImg} alt="" />
+      </div>
+
+      {/* Built and Ships with */}
+    <BuiltShipsWith></BuiltShipsWith>
 
       <section className="mb-16">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-4xl font-bold title-font mb-1">
               Meet Mouseback.
@@ -143,7 +151,7 @@ const MouseBack = () => {
         </div>
       </section>
 
-      <section className="body-font mb-16">
+      <section className="body-font my-20">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <h1 className="mt-12 font-bold text-5xl">
@@ -194,13 +202,15 @@ const MouseBack = () => {
         </div>
       </section>
 
-      <video className="mb-16 rounded-lg" controls>
+     <div className="container mx-auto">
+     <video className="mb-16 rounded-lg" controls>
         <source
           src={video}
           type="video/webm"
         />
         <p>Your browser does not support the video tag.</p>
       </video>
+     </div>
 
       <section className="body-font mb-16">
         {/* <!-- LAnching soon --> */}
