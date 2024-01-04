@@ -212,7 +212,7 @@ const MouseBack = () => {
         </div>
       </section>
 
-     <div className="container mx-auto p-20">
+     <div className="container mx-auto md:p-20">
      <video className="mb-16 rounded-lg" controls>
         <source
           src={video}
