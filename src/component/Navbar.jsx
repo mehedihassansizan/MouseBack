@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-screen"
+          className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
         >
           {navli}
         </ul>
@@ -140,7 +140,7 @@ const Navbar = () => {
       
       <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:align-end">
         <div class="flex items-center gap-3 text-sm font-semibold leading-6 2xsm:gap-7">
-          <label className="swap swap-rotate pr-8">
+          <label className="swap swap-rotate">
             {/* this hidden checkbox controls the state */}
             <input type="checkbox" className="theme-controller" value="black" />
 

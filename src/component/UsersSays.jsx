@@ -2,9 +2,9 @@ import React from "react";
 
 const UsersSays = () => {
   return (
-    <div className="md:p-20">
+    <div className="md:p-24 font-mono">
         <div class="relative sm:left-5 -m-2 rounded-xl bg-yellow-400/20 lg:ring-1 lg:ring-yellow-500/50 lg:-m-4 ">
-        <div class="relative sm:top-5 sm:right-5 bg-gray-900 dark:bg-boxdark px-8 py-20 shadow-xl sm:rounded-xl sm:px-10 sm:py-16 md:px-12 lg:px-20">
+        <div class="relative sm:top-5 sm:right-5 h-[550px] bg-gray-900 dark:bg-boxdark px-8 py-20 shadow-xl sm:rounded-xl sm:px-10 sm:py-16 md:px-12 lg:px-20">
           <h2 class="text-left text-xl font-semibold tracking-wide leading-7 text-gray-500 dark:text-white">
             What Our Users Say
           </h2>

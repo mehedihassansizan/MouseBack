@@ -21,7 +21,7 @@ const MouseBack = () => {
                 environments.
               </p>
             </div>
-            <div className="flex justify-center text-center">
+            <div className="flex justify-center text-center dark:text-white">
               <div className="relative">
                 {/* <!-- <label for="email" className="leading-7 text-lg text-gray-600">Email</label> --> */}
                 <input
@@ -35,6 +35,8 @@ const MouseBack = () => {
               <button className="ml-2 text-white bg-indigo-500 border-0 md:py-2 md:px-8 px-2 text-sm focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Join the waitlist
               </button>
+              
+             
             </div>
           </div>
         </div>
