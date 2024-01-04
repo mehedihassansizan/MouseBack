@@ -125,13 +125,13 @@ const Navbar = () => {
           Features
         </a>
         <a
-          href="https://docs.opensaas.sh"
+          href=""
           class="text-sm font-semibold leading-6  duration-300 ease-in-out hover:text-yellow-500 dark:text-white"
         >
           Documentation
         </a>
         <a
-          href="https://docs.opensaas.sh/blog"
+          href=""
           class="text-sm font-semibold leading-6  duration-300 ease-in-out hover:text-yellow-500 dark:text-white"
         >
           Blog
