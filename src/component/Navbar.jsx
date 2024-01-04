@@ -52,7 +52,7 @@ const Navbar = () => {
   );
   return (
     <nav
-      class="flex items-center justify-between p-6 lg:px-8 mb-16"
+      class="flex items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div class="flex items-center lg:flex-1">
@@ -89,33 +89,6 @@ const Navbar = () => {
           {navli}
         </ul>
       </div>
-
-      {/*         
-      <div class="flex lg:hidden">
-        <button
-          type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            class="h-6 w-6"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div> */}
 
       <div class="hidden lg:flex lg:gap-x-12 ">
         <a

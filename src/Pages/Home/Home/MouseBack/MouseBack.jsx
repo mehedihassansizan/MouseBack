@@ -1,29 +1,28 @@
 import React from "react";
 import video from "../../../../assets/video/414109370_7237171126370790_1089872783276703605_n_2.mp4";
-import bannarImg from "../../../../assets/img/open-saas-banner.png"
+import bannarImg from "../../../../assets/img/open-saas-banner.png";
 import BuiltShipsWith from "../../../../component/BuiltShipsWith";
 import Features from "../../../../component/Features";
 import UsersSays from "../../../../component/UsersSays";
-
+import Frequentlyquestions from "../../../../component/Frequentlyquestions";
 
 const MouseBack = () => {
   return (
-    <div >
-        {/* <!-- Build software Together --> */}
-        <div className=" body-font font-mono bg-frame ">
-          <div className="container px-5  mx-auto">
-            <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="text-7xl font-bold title-font mb-4">
-                Build software <br /> together.
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                The quickest way to collaborate on staging and <br /> ephemeral
-                environments.
-              </p>
-            </div>
-            <div className="flex justify-center text-center dark:text-white">
+    <div>
+      <div class="py-24 sm:py-32 font-mono">
+        <div class="mx-auto max-w-8xl px-6 lg:px-8">
+          <div class="lg:mb-18 mx-auto max-w-3xl text-center">
+            <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
+              The <span class="italic">free</span> SaaS template with
+              superpowers
+            </h1>
+            <p class="mt-6 mx-auto max-w-2xl text-lg leading-8 ">
+              An open-source, feature-rich, full-stack React + NodeJS template
+              that manages features for you.
+            </p>
+            <div className="flex justify-center text-center dark:text-white mt-14">
               <div className="relative">
-                {/* <!-- <label for="email" className="leading-7 text-lg text-gray-600">Email</label> --> */}
+                
                 <input
                   type="email"
                   id="email"
@@ -40,21 +39,26 @@ const MouseBack = () => {
             </div>
           </div>
         </div>
-      
+      </div>
+
       <div className="container md:p-20 md:mt-0 mt-24 mx-auto mb-20">
-        <img className="rounded-lg"  src={bannarImg} alt="" />
+        <img className="rounded-lg" src={bannarImg} alt="" />
       </div>
 
       {/* Built and Ships with */}
-    <BuiltShipsWith></BuiltShipsWith>
+      <BuiltShipsWith></BuiltShipsWith>
 
-    {/* open source */}
-    <Features></Features>
 
-    {/* users says */}
-    <UsersSays></UsersSays>
 
-      <section className="mb-16 mt-[200px]">
+      {/* open source */}
+      <Features></Features>
+
+      {/* users says */}
+      <UsersSays></UsersSays>
+
+      <Frequentlyquestions></Frequentlyquestions>
+
+      <section className="mb-16 font-mono mt-[200px]">
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-4xl font-bold title-font mb-1">
@@ -161,7 +165,7 @@ const MouseBack = () => {
         </div>
       </section>
 
-      <section className="body-font my-20">
+      <section className="body-font font-mono my-20">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <h1 className="mt-12 font-bold text-5xl">
@@ -212,17 +216,14 @@ const MouseBack = () => {
         </div>
       </section>
 
-     <div className="container mx-auto md:p-20">
-     <video className="mb-16 rounded-lg" controls>
-        <source
-          src={video}
-          type="video/webm"
-        />
-        <p>Your browser does not support the video tag.</p>
-      </video>
-     </div>
+      <div className="container mx-auto md:p-20">
+        <video className="mb-16 rounded-lg" controls>
+          <source src={video} type="video/webm" />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
 
-      <section className="body-font mb-16">
+      <section className="body-font font-mono mb-16">
         {/* <!-- LAnching soon --> */}
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
@@ -251,8 +252,6 @@ const MouseBack = () => {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 };
