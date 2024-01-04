@@ -52,7 +52,7 @@ const Navbar = () => {
   );
   return (
     <nav
-      class="flex items-center justify-between p-6 lg:px-8"
+      class="flex items-center font-mono justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div class="flex items-center lg:flex-1">
