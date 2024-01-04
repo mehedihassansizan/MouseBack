@@ -3,6 +3,7 @@ import video from "../../../../assets/video/414109370_7237171126370790_108987278
 import bannarImg from "../../../../assets/img/open-saas-banner.png"
 import BuiltShipsWith from "../../../../component/BuiltShipsWith";
 import Features from "../../../../component/Features";
+import UsersSays from "../../../../component/UsersSays";
 
 
 const MouseBack = () => {
@@ -48,7 +49,10 @@ const MouseBack = () => {
     {/* open source */}
     <Features></Features>
 
-      <section className="mb-16">
+    {/* users says */}
+    <UsersSays></UsersSays>
+
+      <section className="mb-16 mt-[200px]">
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-4xl font-bold title-font mb-1">
@@ -65,9 +69,9 @@ const MouseBack = () => {
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3 ">
-              <div className="flex rounded-lg h-full bg-neutral  p-8 flex-col">
+              <div className="flex rounded-lg h-full border p-8 flex-col">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full  bg-indigo-500 dark:text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -80,12 +84,12 @@ const MouseBack = () => {
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
                   </div>
-                  <h1 className="text-white text-lg title-font font-medium">
+                  <h1 className="dark:text-white text-lg title-font font-medium">
                     Copy-paste our script
                   </h1>
                 </div>
                 <div className="flex-grow">
-                  <p className="leading-relaxed text-white text-base">
+                  <p className="leading-relaxed dark:text-white text-base">
                     Add our script onto any website or environment you wish to
                     collaborate on.
                   </p>
@@ -93,9 +97,9 @@ const MouseBack = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/3 ">
-              <div className="flex rounded-lg h-full bg-neutral p-8 flex-col">
+              <div className="flex rounded-lg h-full border p-8 flex-col">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 dark:text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -109,12 +113,12 @@ const MouseBack = () => {
                       <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                   </div>
-                  <h1 className="text-white text-lg title-font font-medium">
+                  <h1 className="dark:text-white text-lg title-font font-medium">
                     Share your URL
                   </h1>
                 </div>
                 <div className="flex-grow">
-                  <p className="leading-relaxed text-white text-base">
+                  <p className="leading-relaxed dark:text-white text-base">
                     Mouseback embeds itself into your website or environment
                     with zero faff.
                   </p>
@@ -122,9 +126,9 @@ const MouseBack = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/3">
-              <div className="flex rounded-lg h-full bg-neutral p-8 flex-col">
+              <div className="flex rounded-lg h-full border p-8 flex-col">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 dark:text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -139,12 +143,12 @@ const MouseBack = () => {
                       <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                     </svg>
                   </div>
-                  <h1 className="text-white text-lg title-font font-medium">
+                  <h1 className="dark:text-white text-lg title-font font-medium">
                     Start iterating
                   </h1>
                 </div>
                 <div className="flex-grow">
-                  <p className="leading-relaxed text-base text-white">
+                  <p className="leading-relaxed text-base dark:text-white">
                     Your site transforms into a feedback canvas so you can start
                     building together.
                   </p>
