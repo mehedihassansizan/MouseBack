@@ -47,16 +47,16 @@ const AuthProvider = ({children}) => {
         }
     }, [])
 
-    const [isDarkMode, setIsDarkMode] = useState(true);
+//     const [isDarkMode, setIsDarkMode] = useState(true);
 
-  useEffect(() => {
-    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDarkMode(localStorage.getItem('darkMode') === 'false' ? false : userPrefersDark);
-  }, []);
+//   useEffect(() => {
+//     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+//     setIsDarkMode(localStorage.getItem('darkMode') === 'false' ? false : userPrefersDark);
+//   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('darkMode', isDarkMode);
-  }, [isDarkMode]);
+//   useEffect(() => {
+//     localStorage.setItem('darkMode', isDarkMode);
+//   }, [isDarkMode]);
 
 
     const authInfo ={
@@ -66,9 +66,7 @@ const AuthProvider = ({children}) => {
         googleLogIn,
         githubLogIn,
         logOut,
-        loading,
-        isDarkMode,
-        setIsDarkMode
+        loading
     }
 
 

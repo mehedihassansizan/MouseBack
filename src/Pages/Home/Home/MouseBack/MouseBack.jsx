@@ -9,14 +9,14 @@ import Frequentlyquestions from "../../../../component/Frequentlyquestions";
 const MouseBack = () => {
   return (
     <div>
-      <div class=" sm:pt-24 font-mono">
-        <div class="mx-auto max-w-8xl px-6 lg:px-8">
-          <div class="lg:mb-18 mx-auto max-w-3xl text-center">
-            <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
-              The <span class="italic">free</span> SaaS template with
+      <div className=" sm:pt-24 font-mono">
+        <div className="mx-auto max-w-8xl px-6 lg:px-8">
+          <div className="lg:mb-18 mx-auto max-w-3xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+              The <span className="italic">free</span> SaaS template with
               superpowers
             </h1>
-            <p class="mt-6 mx-auto max-w-2xl text-lg leading-8 ">
+            <p className="mt-6 mx-auto max-w-2xl text-lg leading-8 ">
               An open-source, feature-rich, full-stack React + NodeJS template
               that manages features for you.
             </p>
@@ -32,7 +32,7 @@ const MouseBack = () => {
               </div>
               <a
                 href="https://github.com/wasp-lang/open-saas"
-                class="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join waitlist
               </a>
@@ -79,9 +79,9 @@ const MouseBack = () => {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -107,9 +107,9 @@ const MouseBack = () => {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -136,9 +136,9 @@ const MouseBack = () => {
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -246,7 +246,7 @@ const MouseBack = () => {
             </div>
             <a
                 href="https://github.com/wasp-lang/open-saas"
-                class="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join waitlist
               </a>

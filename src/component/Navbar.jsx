@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
-  const { user, logOut , isDarkMode, setIsDarkMode} = useContext(AuthContext);
+  const { user, logOut} = useContext(AuthContext);
  
   const handleLogOut = () => {
     logOut()
@@ -118,7 +118,8 @@ const Navbar = () => {
         <div >
       {/* Your Toggle Button */}
       <label className="swap swap-rotate mt-1">
-        <input type="checkbox" className="theme-controller" value="dark" checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} />
+      {/* checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} */}
+        <input type="checkbox" className="theme-controller" value="black"  />
          <svg
               className="swap-off fill-current w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +147,7 @@ const Navbar = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="ml-1"
                 height="1.1rem"

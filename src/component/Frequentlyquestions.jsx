@@ -3,17 +3,17 @@ import React from "react";
 const Frequentlyquestions = () => {
   return (
     <div>
-      <div class="mt-32 mx-auto max-w-2xl divide-y font-mono divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:py-32">
-        <h2 class="text-2xl font-bold leading-10 tracking-tight">
+      <div className="mt-32 mx-auto max-w-2xl divide-y font-mono divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:py-32">
+        <h2 className="text-2xl font-bold leading-10 tracking-tight">
           Frequently asked questions
         </h2>
-        <dl class="mt-10 space-y-8 divide-y divide-gray-900/10 dark:divide-gray-100/10">
-          <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-            <dt class="text-base font-semibold leading-7 lg:col-span-5">
+        <dl className="mt-10 space-y-8 divide-y divide-gray-900/10 dark:divide-gray-100/10">
+          <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt className="text-base font-semibold leading-7 lg:col-span-5">
               Why is this SaaS Template free and open-source?
             </dt>
-            <dd class="mt-4 lg:col-span-7 lg:mt-0">
-              <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+            <dd className="mt-4 lg:col-span-7 lg:mt-0">
+              <p className="text-base leading-7 text-gray-600 dark:text-gray-400">
                 We believe the best product is made when the community puts
                 their heads together. We also believe a quality starting point
                 for a web app should be free and available to everyone. Our hope
@@ -22,12 +22,12 @@ const Frequentlyquestions = () => {
               </p>
             </dd>
           </div>
-          <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
-            <dt class="text-base font-semibold leading-7 lg:col-span-5">
+          <div className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt className="text-base font-semibold leading-7 lg:col-span-5">
               What's Wasp?
             </dt>
-            <dd class="mt-4 lg:col-span-7 lg:mt-0">
-              <p class="text-base leading-7 text-gray-600 dark:text-gray-400">
+            <dd className="mt-4 lg:col-span-7 lg:mt-0">
+              <p className="text-base leading-7 text-gray-600 dark:text-gray-400">
                 It's the fastest way to develop full-stack React + NodeJS +
                 Prisma apps and it's what gives this template superpowers. Wasp
                 relies on React, NodeJS, and Prisma to define web components and
@@ -39,7 +39,7 @@ const Frequentlyquestions = () => {
               </p>
               <a
                 href="https://wasp-lang.dev"
-                class="mt-4 text-base leading-7 text-yellow-500 hover:text-yellow-600"
+                className="mt-4 text-base leading-7 text-yellow-500 hover:text-yellow-600"
               >
                 Learn more →
               </a>
