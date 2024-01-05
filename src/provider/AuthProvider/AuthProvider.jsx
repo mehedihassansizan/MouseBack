@@ -1,7 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import app from '../../Firebase/firebase.config';
-
+import app from '../../Firebase/firebase.config'
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
@@ -48,6 +47,17 @@ const AuthProvider = ({children}) => {
         }
     }, [])
 
+    const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setIsDarkMode(localStorage.getItem('darkMode') === 'false' ? false : userPrefersDark);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', isDarkMode);
+  }, [isDarkMode]);
+
 
     const authInfo ={
         login,
@@ -56,7 +66,9 @@ const AuthProvider = ({children}) => {
         googleLogIn,
         githubLogIn,
         logOut,
-        loading
+        loading,
+        isDarkMode,
+        setIsDarkMode
     }
 
 

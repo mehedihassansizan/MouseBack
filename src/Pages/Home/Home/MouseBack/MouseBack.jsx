@@ -9,7 +9,7 @@ import Frequentlyquestions from "../../../../component/Frequentlyquestions";
 const MouseBack = () => {
   return (
     <div>
-      <div class=" sm:pt-16 font-mono">
+      <div class=" sm:pt-24 font-mono">
         <div class="mx-auto max-w-8xl px-6 lg:px-8">
           <div class="lg:mb-18 mx-auto max-w-3xl text-center">
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
@@ -56,7 +56,7 @@ const MouseBack = () => {
 
       <Frequentlyquestions></Frequentlyquestions>
 
-      <section className="mb-16 font-mono mt-[200px]">
+      {/* <section className="mb-16 font-mono mt-[200px]">
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="text-4xl font-bold title-font mb-1">
@@ -161,9 +161,9 @@ const MouseBack = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="body-font font-mono my-20">
+      {/* <section className="body-font font-mono my-20">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <h1 className="mt-12 font-bold text-5xl">
@@ -212,7 +212,7 @@ const MouseBack = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="container mx-auto md:p-20">
         <video className="mb-16 rounded-lg" controls>

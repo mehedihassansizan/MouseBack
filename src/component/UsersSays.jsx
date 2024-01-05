@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const UsersSays = () => {
+ 
   return (
     <div class="mx-auto font-mono mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
       <div class="relative sm:left-5 -m-2 rounded-xl bg-yellow-400/20 lg:ring-1 lg:ring-yellow-500/50 lg:-m-4 ">
