@@ -9,7 +9,7 @@ import Frequentlyquestions from "../../../../component/Frequentlyquestions";
 const MouseBack = () => {
   return (
     <div>
-      <div class="py-24 sm:py-32 font-mono">
+      <div class=" sm:pt-16 font-mono">
         <div class="mx-auto max-w-8xl px-6 lg:px-8">
           <div class="lg:mb-18 mx-auto max-w-3xl text-center">
             <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
@@ -22,7 +22,6 @@ const MouseBack = () => {
             </p>
             <div className="flex justify-center text-center dark:text-white mt-14">
               <div className="relative">
-                
                 <input
                   type="email"
                   id="email"
@@ -31,11 +30,12 @@ const MouseBack = () => {
                   className="bg-gray-100 md:w-[400px] bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              <button className="ml-2 text-white bg-indigo-500 border-0 md:py-2 md:px-8 px-2 text-sm focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Join the waitlist
-              </button>
-              
-             
+              <a
+                href="https://github.com/wasp-lang/open-saas"
+                class="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Join waitlist
+              </a>
             </div>
           </div>
         </div>
@@ -47,8 +47,6 @@ const MouseBack = () => {
 
       {/* Built and Ships with */}
       <BuiltShipsWith></BuiltShipsWith>
-
-
 
       {/* open source */}
       <Features></Features>
@@ -246,9 +244,12 @@ const MouseBack = () => {
                 className="bg-gray-100 md:w-[400px] bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
-            <button className="ml-2 text-white bg-indigo-500 border-0 md:py-2 md:px-8 px-2 text-sm   focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Join waitlist
-            </button>
+            <a
+                href="https://github.com/wasp-lang/open-saas"
+                class="group relative flex items-center justify-center rounded-md bg-gray-100 px-6 ml-4 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-200 text-black hover:ring-2 hover:ring-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Join waitlist
+              </a>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import MouseBack from '../Pages/Home/Home/MouseBack/MouseBack';
+
 import Navbar from '../component/Navbar';
 import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../component/Footer';
